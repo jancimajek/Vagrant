@@ -1,0 +1,9 @@
+syn on
+set ts=4
+set hlsearch
+set incsearch
+set ai
+set nowrap
+set tw=0
+set ruler
+set bg=dark
