@@ -1,0 +1,10 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  # Share an additional folder to the guest VM:
+  config.vm.synced_folder File.dirname(__FILE__) + "/conf", "/vagrant-common"
+
+  # Provision using shell
+  config.vm.provision :shell, :path => File.dirname(__FILE__) + "/conf/bootstrap.sh"
+end

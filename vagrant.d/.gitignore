@@ -1,0 +1,7 @@
+boxes/
+data/
+gems/
+rgloader/
+tmp/
+insecure_private_key
+setup_version
