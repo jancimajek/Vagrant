@@ -17,6 +17,7 @@ apt-get -q -y install apache2 php5 php5-cli php5-curl php-pear maven
 echo "[Configuring Apache]"
 cp -v /vagrant/conf/apache-default-vhost.conf /etc/apache2/sites-available/default
 a2ensite default
+a2enmod rewrite
 
 # Restart Apache
 apache2ctl graceful
